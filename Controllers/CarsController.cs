@@ -29,7 +29,8 @@ namespace CarDealership.Controllers
       newCar.SetDetails(Request.Form["new-details"]);
       newCar.Save();
       List<Car> allCars = Car.GetAll();
-      return View("Index", allCars);
+      // return View("Index", allCars);
+      return View("DisplayNewCar", allCars); // modification beyond the tutorial
     }
 
     [HttpPost("/cars/delete")]
@@ -37,6 +38,14 @@ namespace CarDealership.Controllers
     {
         Car.ClearAll();
         return View();
+    }
+
+    // modification beyond the tutorial
+    [HttpGet("/cars/details")]
+    public ActionResult DisplayNewCar()
+    {
+      List<Car> allCars = Car.GetAll();
+      return View("DisplayNewCar", allCars);
     }
 
   }
