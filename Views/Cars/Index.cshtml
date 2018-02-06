@@ -1,0 +1,11 @@
+<h1>Cars For Sale</h1>
+<ul>
+  @foreach(var car in Model)
+  {
+    <li>@car.GetMakeModel()</li>
+  }
+</ul>
+<p><a href="/cars/new">Add another car</a></p>
+<form action="cars/delete" method="post">
+  <button type="submit" name="button">Remove Your Cars</button>
+</form>
