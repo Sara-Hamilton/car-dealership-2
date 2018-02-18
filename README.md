@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is an Epicodus practice project for week 2 of the C# course. Its purpose is to display understanding .Net MVC architecture in C#._
+_This is an Epicodus practice project for week 1 of the C# course. Its purpose is to display understanding .Net MVC architecture in C#._
 
 #### _Car Dealership 2_
 * Allows the user to create a list of cars
